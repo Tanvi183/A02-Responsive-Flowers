@@ -17,3 +17,132 @@
   font-style: normal;
 }
 
+.primary-color {
+    color:  #E95A08;
+}
+
+.dark-2 {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Noto Serif";
+}
+
+.section-description {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: "Inter";
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.display-flex {
+  display: flex;
+}
+
+/* header section's style */
+.header {
+  max-width: 1140px;
+  margin: auto;
+}
+
+/* Navbar styles */
+.navbar {
+    margin-top: 30px;
+    margin-bottom: 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 48px;
+    cursor: pointer;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-link {
+    font-family: "Inter";
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.3s ease;
+}
+.nav-link:hover {
+    font-weight: 700;
+    color: #252432;
+}
+
+/* Banner Section style */
+.banner-content {
+  width: 50%;
+  margin-top: 160px;
+}
+
+.banner-title {
+  font-size: 65px;
+  font-family: "noto-serif";
+  font-weight: bold;
+}
+
+.banner-image {
+  margin-top: 105px;
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive media query */
+    @media screen  and (max-width: 576px){
+        .navbar{
+          margin-bottom: 28px;
+          justify-content: space-around;
+        }
+        .menu {
+            display: none;
+        }
+        .banner {
+          flex-direction: column-reverse;
+        }
+        .banner-image,
+        .banner-content {
+          margin: 0 auto;
+          width: 90%;
+        }
+        .banner-title {
+          font-size: 24px;
+          margin-top: 28px;
+        }
+        .section-description {
+          font-size: 14px;
+        }
+    }
+
+/* Medium size device */
+    @media screen  and (min-width: 576px) and (max-width: 992px){
+        .banner {
+          flex-direction: column-reverse;
+        }
+        .banner-image,
+        .banner-content {
+          margin: 0 auto;
+          width: 90%;
+        }
+
+        .banner-title {
+          margin-top: 28px;
+        }
+    }
