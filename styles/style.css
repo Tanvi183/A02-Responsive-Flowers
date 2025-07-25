@@ -148,6 +148,9 @@
     margin-top: 83px;
     margin-bottom: 130px;
   }
+  .featured-images {
+    width: 50%;
+  }
   .feature-content {
     margin-left: 60px;
     margin-top: 165px;
@@ -156,8 +159,8 @@
     height: 286px;
     width: 286px;
     filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
-    margin-bottom: -165px;
-    margin-left: 170px;
+    margin-bottom: -30%;
+    margin-left: 64%;
   }
   .feature-card {
     margin: 20px 25px;
@@ -212,6 +215,7 @@
           padding: 16px 65px;
         }
 
+    
         .features {
           flex-direction: column;
         }
