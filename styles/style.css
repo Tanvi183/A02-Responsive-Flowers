@@ -139,11 +139,29 @@
     background-color: #E95A08;
     padding: 16px 80px;
     font-family: "Inter";
+    border: none;
   }
 
 
-
-
+  /* Features Style */
+  .features {
+    margin-top: 83px;
+    margin-bottom: 130px;
+  }
+  .feature-content {
+    margin-left: 60px;
+    margin-top: 165px;
+  }
+  #trusted-badge {
+    height: 286px;
+    width: 286px;
+    filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
+    margin-bottom: -165px;
+    margin-left: 170px;
+  }
+  .feature-card {
+    margin: 20px 25px;
+  }
 
 
 
@@ -158,9 +176,11 @@
         }
         .banner-image,
         .banner-content,
-        .products {
-          margin: 0 auto;
+        .products,
+        .featured-images,
+        .feature-content{
           width: 90%;
+          margin: 0 auto;
         }
         
         .navbar{
@@ -192,16 +212,35 @@
           padding: 16px 65px;
         }
 
+        .features {
+          flex-direction: column;
+        }
+        .featured-images img{
+          width: 100%;
+        }
+        #trusted-badge {
+          display: none;
+        }
+        .feature-content {
+          margin-top: 18px;
+        }
     }
 
 /* Medium size device */
     @media screen  and (min-width: 576px) and (max-width: 992px){
-        .header,
+        .navbar,
         .banner-image,
         .banner-content,
-        .products {
-          margin: 0 auto;
+        .products,
+        .featured-images,
+        .feature-content {
           width: 90%;
+          margin: 0 auto;
+        }
+
+        .navbar {
+          margin-top: 30px;
+          margin-bottom: 120px;
         }
 
         .banner {
@@ -218,11 +257,24 @@
           grid-template-columns: repeat(2, 1fr);
           gap: 20px;
         }
- 
+
+        .features {
+          flex-direction: column;
+        }
+        .featured-images img{
+          width: 100%;
+        }
+        #trusted-badge {
+          display: none;
+        }
+        .feature-content {
+          margin-top: 18px;
+        }
     }
 
     @media only screen and (max-width: 700px) {
-        .menu {
+        .menu,
+        .feature-br {
             display: none;
         }
     }
