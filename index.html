@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -125,14 +125,14 @@
             </div>
             <div class="feature-content">
                 <h3 id="feature-section-title" class="section-title">Flower & Plants <br class="feature-br"> Lover</h3>
-                <ul>
-                    <li class="feature-card section-description ">
+                <ul class="section-description list-disc">
+                    <li class="feature-card">
                         <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
                     </li>
-                    <li class="feature-card section-description ">
+                    <li class="feature-card">
                         <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
                     </li>
-                    <li class="feature-card section-description ">
+                    <li class="feature-card">
                         <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
                     </li>
                 </ul>    
@@ -143,31 +143,44 @@
         <section class="latest-deal">
             <div class="deal-info">
                 <h3 class="section-title deal-title"><span class="primary-color">Latest</span> Deals</h3>
-                <p class="deal-dscription section-description">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>        
+                <p class="section-description">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>        
             </div>
-            <div class="deal-container display-flex">
-                <div class="double-deal">
-                    <div class="item-1">
-                        <div class="percentage">
+            <div class="deal-container">
+                <div class="left-column">
+                    <div class="card">
+                        <img src="./assets/deal-ana.png" alt="Bloom Plant">
+                        <div class="overlay">
                             <h3>60% Off | Bloom Plant</h3>
-                            <h4>Shop Now <hr></h4>
+                            <a href="#">Shop Now</a>
                         </div>
                     </div>
-                    <div class="item-2">
-                        <div class="percentage">
-                            <h3>30% Off | Ana  Plant</h3>
-                            <h4>Shop Now <hr></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-deal">
-                    <div class="item-3">
-                        <div class="percentage">
-                            <h1>25% Off | Zabo Plant</h1>
-                            <h2>Shop Now <hr></h2>
+                    <div class="card">
+                        <img src="assets/deal-bloom.png" alt="Ana Plant">
+                        <div class="overlay">
+                            <h3>30% Off | Ana Plant</h3>
+                            <a href="#">Shop Now</a>
                         </div>
                     </div>
                 </div>
+                <div class="card right-column">
+                    <img src="assets/deal-zabo.png" alt="Zabo Plant">
+                    <div class="overlay">
+                        <h2>25% Off | Zabo Plant</h2>
+                        <a href="#">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+            <h2 class="section-title">Join the colorful Bunch</h2>
+            <form class="form">
+                <input type="email" placeholder="Write email" required />
+                <button type="submit">Subscribe</button>
+            </form>
             </div>
         </section>
 
